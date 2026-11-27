@@ -11,6 +11,7 @@ it('renders the styled login page', function () {
     $response->assertSee('Masuk ke akunmu');
     $response->assertSee('Alamat email');
     $response->assertSee('Daftar sekarang');
+    $response->assertDontSee('Ide hebat dimulai dari sebuah catatan.');
 });
 
 it('shows the login error after invalid credentials', function () {
